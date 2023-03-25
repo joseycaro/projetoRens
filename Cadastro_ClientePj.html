@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE=edge ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário.Pj Rens | GN </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(18, 218, 118));
+        }
+
+        .Box {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 50%;
+        }
+
+        fieldset {
+            border-radius: 3px solid dodgerblue;
+        }
+
+        legend {
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            text-align: center;
+            background-color: dodgerblue;
+            border-radius: 8px;
+
+        }
+
+        .inputBox {
+            position: relative;
+        }
+
+        .inputUser {
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 13px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+
+        .labelInput {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: 0, 5 s;
+        }
+
+        .inputUser:focus~.labelInput,
+        .inputUser:valid~.labelInput {
+            top: -15px;
+            font-size: 10px;
+            color: dodgerblue;
+        }
+
+        #data_nascimento {
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        #gravar {
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            width: 24%;
+            cursor: pointer;
+            color: white;
+            border-radius: 10px;
+            height: 40px;
+        }
+
+        #gravar:hover {
+            background-image: linear-gradient(to right, rgb(35, 189, 265), rgb(35, 78, 90));
+        }
+
+        #limpar {
+            background-color: darkkhaki;
+            width: 24%;
+            cursor: pointer;
+            color: white;
+            border-radius: 10px;
+            height: 40px;
+        }
+
+        #limpar:hover {
+            background-image: linear-gradient(to right, rgb(35, 189, 265), rgb(190, 192, 78));
+            
+        }
+
+        #excluir {
+            background-color: rgb(211, 120, 104);
+            width: 24%;
+            cursor: pointer;
+            color: white;
+            border-radius: 10px;
+            height: 40px;
+        }
+
+        #excluir:hover {
+            background-image: linear-gradient(to right, rgb(35, 189, 265), rgb(224, 140, 91));
+            
+        }
+
+        #imprimir {
+            background-color: rgb(149, 216, 158);
+            width: 24%;
+            cursor: pointer;
+            color: white;
+            border-radius: 10px;
+            height: 40px;
+        }
+
+        #imprimir:hover {
+            background-image: linear-gradient(to right, rgb(35, 189, 265), rgb(55, 218, 63));
+        }
+        @media screen and (max-width: 768px) {
+            section, aside {
+                width: 100%;
+                padding: 0;
+            }
+            
+        }
+        @media screen and (max-width: 600px) {
+            nav li{
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="Box">
+        <form action="Cadatro_Cliente.php" method="POST">
+            <fieldset>
+                <legend><b>Formulário de Clientes PJ</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nomefantacia" id="nomefantacia" class="inputUser" required>
+                    <label for="nomefantacia" class="labelInput">Nome Fantasia:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="razaosocial" id="rsocial" class="inputUser" required>
+                    <label for="razaosocial" class="labelInput">Razão Social:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="cnpj" name="cnpj" id="cnpj" class="inputUser" required>
+                    <label for="cnpj" class="labelInput">CNPJ:</label>
+                </div>                                             
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="endereço" id="endereço" class="inputUser" required>
+                    <label for="endereço" class="labelInput">Endereço:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="numero" id="numero" class="inputUser" required>
+                    <label for="numero" class="labelInput">Número.</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="cep" name="cep" id="cep" class="inputUser" required>
+                    <label for="cep" class="labelInput">CEP:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="codigo" name="ibge" id="ibge" class="inputUser" required>
+                    <label for="ibge" class="labelInput">Codigo IBGE:</label>
+                </div>
+                <br><br>
+
+                <button type="button" id="gravar" form="action">
+                    Gravar
+                </button>
+                <button type="button" id="limpar" form="action">
+                    Limpar
+                </button>
+                <button type="button" id="excluir" form="action">
+                    Excluir
+                </button>
+                <button type="button" id="imprimir" form="action">
+                    Imprimir
+                </button>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

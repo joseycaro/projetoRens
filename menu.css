@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: arial;
+    background-image: linear-gradient(to right, rgb(35, 189, 265), rgb(55, 218, 63));
+    background-size: 100%;    
+}
+ul{
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;    
+    display: block;
+    padding: 0px 20px;
+}
+a:hover{
+    background-color: rgba(255,255,255,.3);
+
+}
+nav{
+    background-color: rgb(0, 113, 241);
+    height: 50px;
+}
+ul#ul-Principal{
+    background-color:  rgb(0, 113, 241);;
+    width: 90%;
+    margin: auto;
+}
+.li-p{
+    line-height: 50px;
+    float: left;
+   
+}
+ul li ul li{
+    background-color: rgb(0, 113, 241);
+    font-family: monospace 
+   
+}
+
+.ul-cadastro, .ul-consultas, .ul-promissoria, .ul-rotinas, .ul-senha{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    section, aside {
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
