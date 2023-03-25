@@ -47,3 +47,11 @@ $(document).ready(function() {
            event.stopPropagation();
        });
    });
+
+function login (){
+    window.location = '../views/Menu_Rens.html';
+}
+
+function voltar (){
+    window.location = '../views/Login-Rens.html';
+}
