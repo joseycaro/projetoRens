@@ -5,6 +5,7 @@
     <meta charset=" UTF-8 ">
     <meta http-equiv=" X-UA-Compatible " content=" IE=edge ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c3cffe3b5e.js" crossorigin="anonymous" defer></script>
     <title> Formulário.PF Rens | GN </title>
     <style>
         body {
@@ -128,17 +129,21 @@
 
         #imprimir:hover {
             background-color: rgb(75, 101, 119);
-        }  
-
-        #link-voltar{
-            color: aliceblue;
-            padding: 0;
-            height: 100px
         }
-        
+
+        #link-voltar {
+            color: rgb(5, 5, 5);
+            padding: 0 100px;
+
+        }
+        button{
+            padding: 20px;
+        }
+
         @media screen and (max-width: 768px) {
 
-            section, aside {
+            section,
+            aside {
                 width: 100%;
                 padding: 0;
             }
@@ -160,7 +165,7 @@
     <div class="Box">
         <form action="Cadatro_Cliente.php" method="POST">
             <fieldset>
-                <legend><b>Formulário de Clientes PF</b></legend>                
+                <legend><b>Formulário de Clientes PF</b></legend>
                 <br>
                 <br>
                 <div class="inputBox">
@@ -236,15 +241,15 @@
                 <button type="button" id="gravar" form="action">
                     Gravar
                 </button>
-                
+
                 <button type="button" id="limpar" form="action">
                     Limpar
                 </button>
-                
+
                 <button type="button" id="excluir" form="action">
                     Excluir
                 </button>
-                
+
                 <button type="button" id="imprimir" form="action">
                     Imprimir
                 </button>
@@ -252,8 +257,10 @@
             </fieldset>
         </form>
     </div>
-    <a id="link-voltar" href="../views/Menu-shalom.html"> <img src="../img/seta-voltar.png" >Voltar</a>
+    <a id="link-voltar" href="../views/Menu-shalom.html">
+        <button>Voltar
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+        </button></a>
 </body>
-
 
 </html>
