@@ -59,7 +59,7 @@ ul li a{
     width: 150px;
     padding: 0.7rem 1rem;
 }
-.fa-solid{
+.icon {
     float: right;
     margin-left: 1rem;
     padding-top: 0.3rem;
@@ -153,7 +153,14 @@ button{
     border-radius: 0.3rem;
     background: rgb(164, 164, 164);
 }
-
+.btn{
+    position: absolute;
+    top: -0.7rem;
+    right: -0.7rem;
+    padding: 0.4rem;
+    background: white;
+    border-radius: 0.3rem;
+}
 .data{
     display: flex;
     flex-direction: column;
@@ -169,4 +176,8 @@ button{
 .divSexo{
     display: flex;
     flex-direction: column;
+}
+
+.PJ{
+    display: none;
 }
