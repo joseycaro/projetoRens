@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE=edge ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estoque | GN </title>
+    <style>
+        body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: rgb(119, 151, 184)
+            }
+    
+            .Box {
+                color: rgb(255, 255, 255);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0, 0, 0, 0.6);
+                padding: 15px;
+                border-radius: 15px;
+                width: 50%;
+            }
+    
+            fieldset {
+                border-radius: 3px solid dodgerblue;
+            }
+    
+            legend {
+                border: 1px solid dodgerblue;
+                padding: 10px;
+                text-align: center;
+                background-color: rgb(126, 179, 231);
+                border-radius: 8px;
+    
+            }
+    
+            .inputBox {
+                position: relative;
+            }
+    
+            .inputUser {
+                background: none;
+                border: none;
+                border-bottom: 1px solid white;
+                outline: none;
+                color: white;
+                font-size: 13px;
+                width: 100%;
+                letter-spacing: 2px;
+            }
+    
+            .labelInput {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                pointer-events: none;
+                transition: 0, 5 s;
+            }
+    
+            .inputUser:focus~.labelInput,
+            .inputUser:valid~.labelInput {
+                top: -15px;
+                font-size: 10px;
+                color: rgb(129, 179, 230);
+            }
+    
+            #data_nascimento {
+                border: none;
+                padding: 8px;
+                border-radius: 10px;
+                outline: none;
+                font-size: 15px;
+            }
+    
+            #gravar {
+                background-color: rgb(186, 220, 243);
+                width: 24%;
+                cursor: pointer;
+                color: white;
+                border-radius: 10px;
+                height: 40px;
+            }
+    
+            #gravar:hover {
+                background-color: rgb(75, 101, 119);
+            }
+    
+            #limpar {
+                background-color: rgb(154, 209, 245);
+                width: 24%;
+                cursor: pointer;
+                color: white;
+                border-radius: 10px;
+                height: 40px;
+            }
+    
+            #limpar:hover {
+                background-color: rgb(75, 101, 119);
+    
+            }
+    
+            #excluir {
+                background-color: rgb(165, 212, 243);
+                width: 24%;
+                cursor: pointer;
+                color: white;
+                border-radius: 10px;
+                height: 40px;
+            }
+    
+            #excluir:hover {
+                background-color: rgb(75, 101, 119);
+    
+            }
+    
+            #imprimir {
+                background-color: rgb(151, 207, 245);
+                width: 24%;
+                cursor: pointer;
+                color: white;
+                border-radius: 10px;
+                height: 40px;
+            }
+    
+            #imprimir:hover {
+                background-color: rgb(75, 101, 119);
+            }
+
+        @media screen and (max-width: 768px) {
+
+            section,
+            aside {
+                width: 100%;
+                padding: 0;
+            }
+
+        }
+
+        @media screen and (max-width: 600px) {
+            nav li {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="Box">
+        <form action="Cadatro_de_Produtos" method="POST">
+            <fieldset>
+                <legend><b>Cadatro de Produtos</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="produto" id="produto" class="inputUser" required>
+                    <label for="produto" class="labelInput">Produto:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="grupo" id="grupo" class="inputUser" required>
+                    <label for="grupo" class="labelInput">grupo:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="vlcusto" id="vlcusto" class="inputUser" required>
+                    <label for="vlcusto" class="labelInput">VlCusto:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="Vlvenda" name="Vlvenda" id="Vlvenda" class="inputUser" required>
+                    <label for="Vlvenda" class="labelInput">VlVenda:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="estoquem" name="estoquem" id="estoquem" class="inputUser" required>
+                    <label for="estoquem" class="labelInput">Estoque Mínimo:</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="estoqueatu" id="estoqueatu" class="inputUser" required>
+                    <label for="estoqueatu" class="labelInput">Estoque Atual:</label>
+                </div>
+                <br>
+
+                <br><br>
+
+                <button type="button" id="gravar" form="action">
+                    Gravar
+                </button>
+                <button type="button" id="limpar" form="action">
+                    Limpar
+                </button>
+                <button type="button" id="excluir" form="action">
+                    Excluir
+                </button>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
