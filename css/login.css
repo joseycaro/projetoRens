@@ -11,8 +11,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background: rgb(195, 201, 201)
+    background: rgb(195, 201, 201);
+   
 }
 .container{
     display: flex;
