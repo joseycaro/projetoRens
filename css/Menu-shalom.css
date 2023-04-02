@@ -83,17 +83,17 @@ ul li a{
 }
 
 /* main container */
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: calc(100vh - 80px);
+.hero{
+   position: relative;
 }
 
 fieldset{
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+
     background: rgba(223, 223, 223, 0.527);
     backdrop-filter: blur(5px);
     border: solid 1px rgba(255, 255, 255, 0.685);
@@ -178,6 +178,6 @@ button{
     flex-direction: column;
 }
 
-.PJ{
-    display: none;
+.CadClientePF, .CadClientePJ{
+    display: none; 
 }

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Menu-shalom.css">
+    <script defer src="../js/menu-shalom.js"></script>
     <script src="https://kit.fontawesome.com/c3cffe3b5e.js" crossorigin="anonymous" defer></script>
-    <script src="../js/menu-shalom.js"></script>
     <title>Menu</title>
 </head>
 <body>
@@ -15,15 +15,15 @@
         <ul>
             <li><a href="">home</a></li>
             <li>
-                <a href="">Cadastro</a><i class="fa-solid fs fa-caret-down icon"></i>
+                <a>Cadastro</a><i class="fa-solid fa-caret-down icon"></i>
                 <div class="dropdown_menu">
                     <ul>
                         <li>
-                            <a href="">Cliente</a><i class="fa-solid fs fa-caret-right icon"></i>
+                            <a>Cliente</a><i class="fa-solid fa-caret-right icon"></i>
                             <div class="dropdown_menu-1">
                                 <ul>
-                                    <li><a href="../views/Cadastro_ClientePf.html">Cliente PF</a></li>
-                                    <li><a href="../views/Cadastro_ClientePj.html">Cliente PJ</a></li>
+                                    <li><a onclick="gerenciarForm()">Cliente PF</a></li>
+                                    <li><a onclick="gerenciarForm()">Cliente PJ</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -49,11 +49,11 @@
     </div>
     <main class="hero">
 
-        <div class="container PF">
+        <div class="CadClientePF">
             <fieldset>
                     <form>
                         <legend>Formulário de Clientes PF</legend>
-                        <button class="btn voltar" onclick="ocultarForm()"><i class="fa-solid fa-xmark"></i></button>
+                        <button class="btn voltar" onclick="fechar()"><i class="fa-solid fa-xmark"></i></button>
                         <div>
                             <div class="inputBox">
                                 <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nome Completo" required>
@@ -144,7 +144,7 @@
             </fieldset>
         </div>
 
-        <div class="container PJ">
+        <div class="CadClientePJ">
             <fieldset>
                     <form>
                         <legend>Formulário de Clientes PF</legend>

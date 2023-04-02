@@ -1,4 +1,8 @@
+var CadClientePF = document.querySelector('.CadClientePF');
 
-function ocultarForm(){
-    alert('Deu certo')
+function gerenciarForm() {
+    if(CadClientePF.style.display == "none")
+        CadClientePF.style.display = 'block';
+    else
+        CadClientePF.style.display = 'block';
 }
