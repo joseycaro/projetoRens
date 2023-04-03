@@ -22,8 +22,8 @@
                             <a>Cliente</a><i class="fa-solid fa-caret-right icon"></i>
                             <div class="dropdown_menu-1">
                                 <ul>
-                                    <li><a onclick="gerenciarForm()">Cliente PF</a></li>
-                                    <li><a onclick="gerenciarForm()">Cliente PJ</a></li>
+                                    <li><a onclick="abriPF()">Cliente PF</a></li>
+                                    <li><a onclick="abriPJ()">Cliente PJ</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -149,8 +149,8 @@
         <div class="CadClientePJ">
             <fieldset>
                     <form>
-                        <legend>Formulário de Clientes PF</legend>
-                        <div>
+                        <legend>Formulário de Clientes PJ</legend>
+                        <div class="spaco">
                             <div class="inputBox">
                                 <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nome Completo" required>
                                 <!-- <label for="nome" class="labelInput">Nome Completo:</label> -->
@@ -171,33 +171,8 @@
                                 <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Tel Fixo" required>
                                 <!-- <label for="telefone" class="labelInput">Telefone:</label> -->
                             </div>
-                        </div>
-                        <div>
-                            <div class="sexo">
-                                <div class="divSexo">
-                                    <p>Sexo:</p>
-                                    <div>
-                                        <input type="radio" id="feminino" label="feminino" name="genero" class="feminino" required>
-                                        <label for="feminino">Feminino</label>
-                                    </div>
-    
-                                    <div>
-                                        <input type="radio" id="mascolino" name="genero" class="mascolino" required>
-                                        <label for="mascolino">Mascolino</label>
-                                    </div>
-                                    
-                                    <div>
-                                        <input type="radio" id="outro" name="genero" class="outro"  required>
-                                        <label for="outro">outros</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="data">
-                                <label type="data_nascimento">Data de Nascimento:</label>
-                                <input type="date" name="data de nascimento" id="data_nascimento" class="InputUser" placeholder="" required>
-                            </div>
-                        </div>
-                        <div>
+                        </div>                        
+                        <div class="spaco">
                             <div class="inputBox">
                                 <input type="text" name="cidade" id="cidade" class="inputUser" placeholder="Cidade" required>
                                 <!-- <label for="cidade" class="labelInput">Cidade:</label> -->

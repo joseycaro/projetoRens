@@ -41,6 +41,7 @@ ul li a{
 }
 .dropdown_menu{
     display: none;
+    z-index: 5;
 }
 .menu_bar ul li:hover .dropdown_menu{
     display: block;
@@ -49,6 +50,7 @@ ul li a{
     left: 0;
     background: white;
     border-radius: 0.5rem;
+    
 }
 .menu_bar ul li:hover .dropdown_menu ul{
     display: block;
@@ -176,7 +178,13 @@ button{
     display: flex;
     flex-direction: column;
 }
-
 .CadClientePF, .CadClientePJ{
-    display: none; 
+    z-index: 1; 
+}
+.CadClientePF, .CadClientePJ{
+    display: none;
+    
+}
+.spaco{
+    padding: 0 2rem;
 }
