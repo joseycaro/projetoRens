@@ -32,28 +32,22 @@
                     </ul>
                 </div>
             </li>
-
-
             <li>
-                <a href="">Estoque</a><i class="fa-solid fa-caret-down"></i>
-                <div class="dropdown_menu">
-                    <ul>
-                        <li><a href="">Consulta</a></li>
-                    </ul>
+                <a onclick="getEstoque()">Consultar</a><i class="fa-solid fa-caret-down"></i>               
             </li>
             <li><a href="">Primissórias</a></li>
+            <li><a href="">Pedidos</a></li>
             <li><a href="">Rotinas</a></li>
             <li><a href="">Alterar Senha</a></li>
             <li><a href="../views/Login-Rens.html">Sair</a></li>
         </ul>
     </div>
     <main class="hero">
-
         <div class="CadClientePF">
             <fieldset>
                     <form>
                         <legend>Formulário de Clientes PF</legend>
-                        <button class="btn voltar" onclick="fechar()"><i class="fa-solid fa-xmark"></i></button>
+                        <button class="btn voltar" onclick="javascript:window.close()"><i class="fa-solid fa-xmark"></i></button>
                         
                         <div>
                             <div class="inputBox">
@@ -150,9 +144,10 @@
             <fieldset>
                     <form>
                         <legend>Formulário de Clientes PJ</legend>
+                        <button class="btn voltar" onclick="javascript:window.close()"><i class="fa-solid fa-xmark"></i></button>
                         <div class="spaco">
                             <div class="inputBox">
-                                <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nome Completo" required>
+                                <input type="text" name="nomefantasia" id="nome" class="inputUser" placeholder="Nome Fanatasia" required>
                                 <!-- <label for="nome" class="labelInput">Nome Completo:</label> -->
                             </div>
                             <div class="inputBox">
@@ -160,15 +155,19 @@
                                 <!-- <label for="email" class="labelInput">Email:</label> -->
                             </div>
                             <div class="inputBox">
-                                <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Telefone" required>
+                                <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Telefone:" required>
                                 <!-- <label for="telefone" class="labelInput">Telefone:</label> -->
                             </div>
                             <div class="inputBox">
-                                <input type="cpf" name="cpf" id="cpf" class="inputUser" placeholder="CPF" required>
+                                <input type="cpf" name="cnpj" id="cnpj" class="inputUser" placeholder="CNPJ:" required>
                                 <!-- <label for="cpf" class="labelInput">CPF:</label> -->
                             </div>
                             <div class="inputBox">
-                                <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Tel Fixo" required>
+                                <input type="tel" name="celular" id="celular" class="inputUser" placeholder="Celular:" required>
+                                <!-- <label for="celular" class="labelInput">Telefone:</label> -->
+                            </div>
+                            <div class="inputBox">
+                                <input type="tel" name="cad.estadual" id="cad.estadual" class="inputUser" placeholder="Cad Estadual:" required>
                                 <!-- <label for="telefone" class="labelInput">Telefone:</label> -->
                             </div>
                         </div>                        
@@ -215,8 +214,60 @@
             </fieldset>
         </div>
 
-    </main>
+        <div class="Box">
+            <form action="Cadatro_de_Produtos" method="POST">
+                <fieldset>
+                    
+                    <legend><b>Cadatro de Produtos</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="produto" id="produto" class="inputUser" required>
+                        <label for="produto" class="labelInput">Produto:</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="grupo" id="grupo" class="inputUser" required>
+                        <label for="grupo" class="labelInput">grupo:</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="vlcusto" id="vlcusto" class="inputUser" required>
+                        <label for="vlcusto" class="labelInput">VlCusto:</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="Vlvenda" name="Vlvenda" id="Vlvenda" class="inputUser" required>
+                        <label for="Vlvenda" class="labelInput">VlVenda:</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="estoquem" name="estoquem" id="estoquem" class="inputUser" required>
+                        <label for="estoquem" class="labelInput">Estoque Mínimo:</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="estoqueatu" id="estoqueatu" class="inputUser" required>
+                        <label for="estoqueatu" class="labelInput">Estoque Atual:</label>
+                    </div>
+                    <br>
+    
+                    <br><br>
+    
+                    <button type="button" id="gravar" form="action">
+                        Gravar
+                    </button>
+                    <button type="button" id="limpar" form="action">
+                        Limpar
+                    </button>
+                    <button type="button" id="excluir" form="action">
+                        Excluir
+                    </button>
+    
+                </fieldset>
+            </form>
+        </div>
 
+    </main>
     <footer>
     </footer>
 </body>

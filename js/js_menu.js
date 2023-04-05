@@ -55,3 +55,4 @@ function login (){
 function voltar (){
     window.location = '../views/Login-Rens.html';
 }
+onclick="javascript:window.close()"

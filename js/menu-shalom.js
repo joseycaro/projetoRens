@@ -1,5 +1,6 @@
 var CadClientePF = document.querySelector('.CadClientePF');
 var CadClientePJ = document.querySelector('.CadClientePJ');
+var Estoque = document.querySelector('.Box');
 
 function abriPF() {
     if(CadClientePF.style.display == "none")
@@ -13,4 +14,11 @@ function abriPJ() {
         CadClientePJ.style.display = 'block';
     else
         CadClientePJ.style.display = 'block';
+}
+
+function getEstoque() {
+    if(Estoque.style.display == "none")
+    Estoque.style.display = 'block';
+    else
+    Estoque.style.display = 'block';
 }

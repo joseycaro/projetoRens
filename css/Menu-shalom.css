@@ -188,3 +188,6 @@ button{
 .spaco{
     padding: 0 2rem;
 }
+.Box{
+    display: none;  
+}
