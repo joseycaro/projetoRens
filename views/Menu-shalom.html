@@ -13,7 +13,6 @@
     <div class="menu_bar">
         <h1><span style="color: #2f3031;">Ren<span style="color: #253E76;">S</span></h1>
         <ul>
-            <li><a href="">home</a></li>
             <li>
                 <a>Cadastro</a><i class="fa-solid fa-caret-down icon"></i>
                 <div class="dropdown_menu">
@@ -32,9 +31,7 @@
                     </ul>
                 </div>
             </li>
-            <li>
-                <a onclick="getEstoque()">Consultar</a><i class="fa-solid fa-caret-down"></i>               
-            </li>
+            <li><a onclick="getEstoque()">Consultar</a><i class="fa-solid fa-caret-down"></i></li>
             <li><a href="">Primissórias</a></li>
             <li><a href="">Pedidos</a></li>
             <li><a href="">Rotinas</a></li>
@@ -215,58 +212,46 @@
         </div>
 
         <div class="Box">
-            <form action="Cadatro_de_Produtos" method="POST">
-                <fieldset>
-                    
-                    <legend><b>Cadatro de Produtos</b></legend>
-                    <br>
-                    <div class="inputBox">
-                        <input type="text" name="produto" id="produto" class="inputUser" required>
-                        <label for="produto" class="labelInput">Produto:</label>
+            <fieldset>
+                <form>
+                    <legend>Estoque</legend>
+                    <button class="btn voltar" onclick="javascript:window.close()"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="spaco">
+                        <div class="inputBox">
+                            <input type="text" name="produto" id="produto" class="inputUser" placeholder="Produto" required>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="grupo" id="grupo" class="inputUser" placeholder="grupo" required>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="vlcusto" id="vlcusto" class="inputUser" placeholder="VlCusto" required>
+                        </div>
+                    </div> 
+                    <div class="spaco">
+                        <div class="inputBox">
+                            <input type="Vlvenda" name="Vlvenda" id="Vlvenda" class="inputUser" placeholder="VlVenda" required>
+                        </div>
+                        <div class="inputBox">
+                            <input type="estoquem" name="estoquem" id="estoquem" class="inputUser" placeholder="Estoque Mínimo" required>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="estoqueatu" id="estoqueatu" class="inputUser" placeholder="Estoque Atual" required>
+                        </div>
                     </div>
-                    <br>
-                    <div class="inputBox">
-                        <input type="text" name="grupo" id="grupo" class="inputUser" required>
-                        <label for="grupo" class="labelInput">grupo:</label>
+                    <div class="buttons">
+                        <button type="button" id="gravar" form="action">
+                            Gravar
+                        </button>
+                        <button type="button" id="limpar" form="action">
+                            Limpar
+                        </button>
+                        <button type="button" id="excluir" form="action">
+                            Excluir
+                        </button>
                     </div>
-                    <br>
-                    <div class="inputBox">
-                        <input type="text" name="vlcusto" id="vlcusto" class="inputUser" required>
-                        <label for="vlcusto" class="labelInput">VlCusto:</label>
-                    </div>
-                    <br>
-                    <div class="inputBox">
-                        <input type="Vlvenda" name="Vlvenda" id="Vlvenda" class="inputUser" required>
-                        <label for="Vlvenda" class="labelInput">VlVenda:</label>
-                    </div>
-                    <br>
-                    <div class="inputBox">
-                        <input type="estoquem" name="estoquem" id="estoquem" class="inputUser" required>
-                        <label for="estoquem" class="labelInput">Estoque Mínimo:</label>
-                    </div>
-                    <br>
-                    <div class="inputBox">
-                        <input type="text" name="estoqueatu" id="estoqueatu" class="inputUser" required>
-                        <label for="estoqueatu" class="labelInput">Estoque Atual:</label>
-                    </div>
-                    <br>
-    
-                    <br><br>
-    
-                    <button type="button" id="gravar" form="action">
-                        Gravar
-                    </button>
-                    <button type="button" id="limpar" form="action">
-                        Limpar
-                    </button>
-                    <button type="button" id="excluir" form="action">
-                        Excluir
-                    </button>
-    
-                </fieldset>
-            </form>
+                </form>
+            </fieldset>
         </div>
-
     </main>
     <footer>
     </footer>
