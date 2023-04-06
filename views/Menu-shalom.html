@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +10,20 @@
     <script src="https://kit.fontawesome.com/c3cffe3b5e.js" crossorigin="anonymous" defer></script>
     <title>Menu</title>
 </head>
-<body>
+
+<body>    
+        
     <div class="menu_bar">
-        <h1><span style="color: #2f3031;">Ren<span style="color: #253E76;">S</span></h1>
+        <div>
+            <h1><span style="color: #545455;">Ren<span style="color: #253E76;">S</span></h1>
+        </div>
         <ul>
             <li>
                 <a>Cadastro</a><i class="fa-solid fa-caret-down icon"></i>
                 <div class="dropdown_menu">
                     <ul>
                         <li>
-                            <a>Cliente</a><i class="fa-solid fa-caret-right icon"></i>
+                            <a>Clientes</a><i class="fa-solid fa-caret-right icon"></i>
                             <div class="dropdown_menu-1">
                                 <ul>
                                     <li><a onclick="abriPF()">Cliente PF</a></li>
@@ -26,216 +31,244 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="">Fornecedor</a></li>
-                        <li><a href="../views/Estoque.html">Mercadoria</a></li>
+                        <li><a>Fornecedor</a></li>
+                        <li><a>Mercadoria</a></li>
                     </ul>
                 </div>
             </li>
             <li><a onclick="getEstoque()">Consultar</a><i class="fa-solid fa-caret-down"></i></li>
-            <li><a href="">Primissórias</a></li>
-            <li><a href="">Pedidos</a></li>
-            <li><a href="">Rotinas</a></li>
-            <li><a href="">Alterar Senha</a></li>
-            <li><a href="../views/Login-Rens.html">Sair</a></li>
+            <li><a>Primissórias</a></li>
+            <li><a>Pedidos</a></li>
+            <li><a>Rotinas</a></li>
+            <li><a>Alterar Senha</a></li>
+            <li><a href="../projetoRens/views/Menu_Rens.html">Sair</a></li>
         </ul>
     </div>
     <main class="hero">
         <div class="CadClientePF">
             <fieldset>
-                    <form>
-                        <legend>Formulário de Clientes PF</legend>
-                        <button class="btn voltar" onclick="javascript:window.close()"><i class="fa-solid fa-xmark"></i></button>
-                        
-                        <div>
-                            <div class="inputBox">
-                                <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nome Completo" required>
-                                <!-- <label for="nome" class="labelInput">Nome Completo:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="email" name="email" id="email" class="inputUser" placeholder="Email" required>
-                                <!-- <label for="email" class="labelInput">Email:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Telefone" required>
-                                <!-- <label for="telefone" class="labelInput">Telefone:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="cpf" name="cpf" id="cpf" class="inputUser" placeholder="CPF" required>
-                                <!-- <label for="cpf" class="labelInput">CPF:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Tel Fixo" required>
-                                <!-- <label for="telefone" class="labelInput">Telefone:</label> -->
-                            </div>
+                <form>                    
+                        <h1 class="logos"><span style="color: #545455;">Ren<span style="color: #253E76;">S</span></h1>
+                    <legend>Formulário de Clientes PF</legend>
+                    <button class="btn voltar" onclick="javascript:window.close()"><i
+                            class="fa-solid fa-xmark"></i></button>
+
+                    <div>
+                        <div class="inputBox">
+                            <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nome Completo"
+                                required>
+                            <!-- <label for="nome" class="labelInput">Nome Completo:</label> -->
                         </div>
-                        <div>
-                            <div class="sexo">
-                                <div class="divSexo">
-                                    <p>Sexo:</p>
-                                    <div>
-                                        <input type="radio" id="feminino" label="feminino" name="genero" class="feminino" required>
-                                        <label for="feminino">Feminino</label>
-                                    </div>
-    
-                                    <div>
-                                        <input type="radio" id="mascolino" name="genero" class="mascolino" required>
-                                        <label for="mascolino">Mascolino</label>
-                                    </div>
-                                    
-                                    <div>
-                                        <input type="radio" id="outro" name="genero" class="outro"  required>
-                                        <label for="outro">outros</label>
-                                    </div>
+                        <div class="inputBox">
+                            <input type="email" name="email" id="email" class="inputUser" placeholder="Email" required>
+                            <!-- <label for="email" class="labelInput">Email:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Telefone"
+                                required>
+                            <!-- <label for="telefone" class="labelInput">Telefone:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="cpf" name="cpf" id="cpf" class="inputUser" placeholder="CPF" required>
+                            <!-- <label for="cpf" class="labelInput">CPF:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Tel Fixo"
+                                required>
+                            <!-- <label for="telefone" class="labelInput">Telefone:</label> -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sexo">
+                            <div class="divSexo">
+                                <p>Sexo:</p>
+                                <div>
+                                    <input type="radio" id="feminino" label="feminino" name="genero" class="feminino"
+                                        required>
+                                    <label for="feminino">Feminino</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" id="mascolino" name="genero" class="mascolino" required>
+                                    <label for="mascolino">Mascolino</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" id="outro" name="genero" class="outro" required>
+                                    <label for="outro">outros</label>
                                 </div>
                             </div>
-                            <div class="data">
-                                <label type="data_nascimento">Data de Nascimento:</label>
-                                <input type="date" name="data de nascimento" id="data_nascimento" class="InputUser" placeholder="" required>
-                            </div>
                         </div>
-                        <div>
-                            <div class="inputBox">
-                                <input type="text" name="cidade" id="cidade" class="inputUser" placeholder="Cidade" required>
-                                <!-- <label for="cidade" class="labelInput">Cidade:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="text" name="estado" id="estado" class="inputUser" placeholder="Estado" required>
-                                <!-- <label for="estado" class="labelInput">Estado:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="text" name="endereço" id="endereço" class="inputUser" placeholder="Endereço" required>
-                                <!-- <label for="endereço" class="labelInput">Endereço:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="text" name="numero" id="numero" class="inputUser" placeholder="Número" required>
-                                <!-- <label for="numero" class="labelInput">Número.</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="cep" name="cep" id="cep" class="inputUser" placeholder="CEP" required>
-                                <!-- <label for="cep" class="labelInput">CEP:</label> -->
-                            </div>
+                        <div class="data">
+                            <label type="data_nascimento">Data de Nascimento:</label>
+                            <input type="date" name="data de nascimento" id="data_nascimento" class="InputUser"
+                                placeholder="" required>
                         </div>
+                    </div>
+                    <div>
+                        <div class="inputBox">
+                            <input type="text" name="cidade" id="cidade" class="inputUser" placeholder="Cidade"
+                                required>
+                            <!-- <label for="cidade" class="labelInput">Cidade:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="estado" id="estado" class="inputUser" placeholder="Estado"
+                                required>
+                            <!-- <label for="estado" class="labelInput">Estado:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="endereço" id="endereço" class="inputUser" placeholder="Endereço"
+                                required>
+                            <!-- <label for="endereço" class="labelInput">Endereço:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="numero" id="numero" class="inputUser" placeholder="Número"
+                                required>
+                            <!-- <label for="numero" class="labelInput">Número.</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="cep" name="cep" id="cep" class="inputUser" placeholder="CEP" required>
+                            <!-- <label for="cep" class="labelInput">CEP:</label> -->
+                        </div>
+                    </div>
 
-                        <div class="buttons">
-                            <button type="button" id="gravar" form="action">
-                                Gravar
-                            </button>
-                        
-                            <button type="button" id="limpar" form="action">
-                                Limpar
-                            </button>
-                        
-                            <button type="button" id="excluir" form="action">
-                                Excluir
-                            </button>
-                        
-                            <button type="button" id="imprimir" form="action">
-                                Imprimir
-                            </button>
-                        </div>
-                    </form>
+                    <div class="buttons">
+                        <button type="button" id="gravar" form="action">
+                            Gravar
+                        </button>
+
+                        <button type="button" id="limpar" form="action">
+                            Limpar
+                        </button>
+
+                        <button type="button" id="excluir" form="action">
+                            Excluir
+                        </button>
+
+                        <button type="button" id="imprimir" form="action">
+                            Imprimir
+                        </button>
+                    </div>
+                </form>
             </fieldset>
         </div>
 
         <div class="CadClientePJ">
             <fieldset>
-                    <form>
-                        <legend>Formulário de Clientes PJ</legend>
-                        <button class="btn voltar" onclick="javascript:window.close()"><i class="fa-solid fa-xmark"></i></button>
-                        <div class="spaco">
-                            <div class="inputBox">
-                                <input type="text" name="nomefantasia" id="nome" class="inputUser" placeholder="Nome Fanatasia" required>
-                                <!-- <label for="nome" class="labelInput">Nome Completo:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="email" name="email" id="email" class="inputUser" placeholder="Email" required>
-                                <!-- <label for="email" class="labelInput">Email:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Telefone:" required>
-                                <!-- <label for="telefone" class="labelInput">Telefone:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="cpf" name="cnpj" id="cnpj" class="inputUser" placeholder="CNPJ:" required>
-                                <!-- <label for="cpf" class="labelInput">CPF:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="tel" name="celular" id="celular" class="inputUser" placeholder="Celular:" required>
-                                <!-- <label for="celular" class="labelInput">Telefone:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="tel" name="cad.estadual" id="cad.estadual" class="inputUser" placeholder="Cad Estadual:" required>
-                                <!-- <label for="telefone" class="labelInput">Telefone:</label> -->
-                            </div>
-                        </div>                        
-                        <div class="spaco">
-                            <div class="inputBox">
-                                <input type="text" name="cidade" id="cidade" class="inputUser" placeholder="Cidade" required>
-                                <!-- <label for="cidade" class="labelInput">Cidade:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="text" name="estado" id="estado" class="inputUser" placeholder="Estado" required>
-                                <!-- <label for="estado" class="labelInput">Estado:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="text" name="endereço" id="endereço" class="inputUser" placeholder="Endereço" required>
-                                <!-- <label for="endereço" class="labelInput">Endereço:</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="text" name="numero" id="numero" class="inputUser" placeholder="Número" required>
-                                <!-- <label for="numero" class="labelInput">Número.</label> -->
-                            </div>
-                            <div class="inputBox">
-                                <input type="cep" name="cep" id="cep" class="inputUser" placeholder="CEP" required>
-                                <!-- <label for="cep" class="labelInput">CEP:</label> -->
-                            </div>
+                <form>
+                    <legend>Formulário de Clientes PJ</legend>
+                    <h1 class="logos"><span style="color: #545455;">Ren<span style="color: #253E76;">S</span></h1>
+                    <button class="btn voltar" onclick="javascript:window.close()"><i
+                            class="fa-solid fa-xmark"></i></button>
+                    <div class="spaco">
+                        <div class="inputBox">
+                            <input type="text" name="nomefantasia" id="nome" class="inputUser"
+                                placeholder="Nome Fanatasia" required>
+                            <!-- <label for="nome" class="labelInput">Nome Completo:</label> -->
                         </div>
-                        <div class="buttons">
-                            <button type="button" id="gravar" form="action">
-                                Gravar
-                            </button>
-                        
-                            <button type="button" id="limpar" form="action">
-                                Limpar
-                            </button>
-                        
-                            <button type="button" id="excluir" form="action">
-                                Excluir
-                            </button>
-                        
-                            <button type="button" id="imprimir" form="action">
-                                Imprimir
-                            </button>
+                        <div class="inputBox">
+                            <input type="email" name="email" id="email" class="inputUser" placeholder="Email" required>
+                            <!-- <label for="email" class="labelInput">Email:</label> -->
                         </div>
-                    </form>
+                        <div class="inputBox">
+                            <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Telefone:"
+                                required>
+                            <!-- <label for="telefone" class="labelInput">Telefone:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="cpf" name="cnpj" id="cnpj" class="inputUser" placeholder="CNPJ:" required>
+                            <!-- <label for="cpf" class="labelInput">CPF:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="tel" name="celular" id="celular" class="inputUser" placeholder="Celular:"
+                                required>
+                            <!-- <label for="celular" class="labelInput">Telefone:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="tel" name="cad.estadual" id="cad.estadual" class="inputUser"
+                                placeholder="Cad Estadual:" required>
+                            <!-- <label for="telefone" class="labelInput">Telefone:</label> -->
+                        </div>
+                    </div>
+                    <div class="spaco">
+                        <div class="inputBox">
+                            <input type="text" name="cidade" id="cidade" class="inputUser" placeholder="Cidade"
+                                required>
+                            <!-- <label for="cidade" class="labelInput">Cidade:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="estado" id="estado" class="inputUser" placeholder="Estado"
+                                required>
+                            <!-- <label for="estado" class="labelInput">Estado:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="endereço" id="endereço" class="inputUser" placeholder="Endereço"
+                                required>
+                            <!-- <label for="endereço" class="labelInput">Endereço:</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="numero" id="numero" class="inputUser" placeholder="Número"
+                                required>
+                            <!-- <label for="numero" class="labelInput">Número.</label> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="cep" name="cep" id="cep" class="inputUser" placeholder="CEP" required>
+                            <!-- <label for="cep" class="labelInput">CEP:</label> -->
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" id="gravar" form="action">
+                            Gravar
+                        </button>
+
+                        <button type="button" id="limpar" form="action">
+                            Limpar
+                        </button>
+
+                        <button type="button" id="excluir" form="action">
+                            Excluir
+                        </button>
+
+                        <button type="button" id="imprimir" form="action">
+                            Imprimir
+                        </button>
+                    </div>
+                </form>
             </fieldset>
         </div>
 
         <div class="Box">
             <fieldset>
                 <form>
+                    <h1 class="logos"><span style="color: #545455;">Ren<span style="color: #253E76;">S</span></h1>
                     <legend>Estoque</legend>
-                    <button class="btn voltar" onclick="javascript:window.close()"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="btn voltar" onclick="javascript:window.close()"><i
+                            class="fa-solid fa-xmark"></i></button>
                     <div class="spaco">
                         <div class="inputBox">
-                            <input type="text" name="produto" id="produto" class="inputUser" placeholder="Produto" required>
+                            <input type="text" name="produto" id="produto" class="inputUser" placeholder="Produto"
+                                required>
                         </div>
                         <div class="inputBox">
                             <input type="text" name="grupo" id="grupo" class="inputUser" placeholder="grupo" required>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="vlcusto" id="vlcusto" class="inputUser" placeholder="VlCusto" required>
+                            <input type="text" name="vlcusto" id="vlcusto" class="inputUser" placeholder="VlCusto"
+                                required>
                         </div>
-                    </div> 
+                    </div>
                     <div class="spaco">
                         <div class="inputBox">
-                            <input type="Vlvenda" name="Vlvenda" id="Vlvenda" class="inputUser" placeholder="VlVenda" required>
+                            <input type="Vlvenda" name="Vlvenda" id="Vlvenda" class="inputUser" placeholder="VlVenda"
+                                required>
                         </div>
                         <div class="inputBox">
-                            <input type="estoquem" name="estoquem" id="estoquem" class="inputUser" placeholder="Estoque Mínimo" required>
+                            <input type="estoquem" name="estoquem" id="estoquem" class="inputUser"
+                                placeholder="Estoque Mínimo" required>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="estoqueatu" id="estoqueatu" class="inputUser" placeholder="Estoque Atual" required>
+                            <input type="text" name="estoqueatu" id="estoqueatu" class="inputUser"
+                                placeholder="Estoque Atual" required>
                         </div>
                     </div>
                     <div class="buttons">
@@ -256,4 +289,5 @@
     <footer>
     </footer>
 </body>
+
 </html>

@@ -191,3 +191,8 @@ button{
 .Box{
     display: none;  
 }
+.logos{
+    position: absolute;
+    top: 2%;
+    
+}

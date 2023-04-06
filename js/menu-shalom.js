@@ -2,6 +2,7 @@ var CadClientePF = document.querySelector('.CadClientePF');
 var CadClientePJ = document.querySelector('.CadClientePJ');
 var Estoque = document.querySelector('.Box');
 
+
 function abriPF() {
     if(CadClientePF.style.display == "none"){
         Estoque.style.display = 'none';
