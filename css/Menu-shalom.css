@@ -10,25 +10,41 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas: "h"
+                         "m";
 }
-.menu_bar{
+header{
+    grid-area: h;
+    z-index: 5;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
-    width: 100%;
+    height: 100%;
     padding: 0 5%;
     background: rgba(223, 223, 223, 0.527);
     backdrop-filter: blur(5px);
+    
 }
-.menu_bar ul{
+main{
+    position: relative;
+    grid-area: m;
+    z-index: 1;
+}
+header ul{
     list-style: none;
     display: flex;
+    
 }
-.menu_bar ul li,
+header ul li,
 ul li{
     padding: 10px 30px;
     position: relative;
+    
 }
 ul li a{
     color: black;
@@ -37,27 +53,24 @@ ul li a{
     transition: 200ms;
     cursor: pointer;
 }
-.menu_bar .dropdown_menu, 
-.menu_bar .dropdown_menu-1{
-    z-index: 10;
-}
-.menu_bar ul li a:hover{
+header ul li a:hover{
     color: white;
 }
-.menu_bar ul li:hover .dropdown_menu{
+header ul li:hover .dropdown_menu{
     display: block;
     position: absolute;
+    
     top: 100%;
     left: 0;
     background: white;
     border-radius: 0.5rem;
 }
-.menu_bar ul li:hover .dropdown_menu ul{
+header ul li:hover .dropdown_menu ul{
     display: block;
     margin: 0.5rem 0;
     
 }
-.menu_bar ul li:hover .dropdown_menu ul li{
+header ul li:hover .dropdown_menu ul li{
     width: 150px;
     padding: 0.7rem 1rem;
 }
@@ -68,6 +81,7 @@ ul li a{
 .dropdown_menu ul li:hover .dropdown_menu-1{
     display: block;
     position: absolute;
+    
     top: 0;
     left: 150px;
     background: white;
@@ -81,21 +95,18 @@ ul li a{
 }
 
 /* main container */
-.hero{
-   position: relative;
-}
+
 fieldset{
     position: absolute;
-
+    
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, -50%);
 
     background: rgba(223, 223, 223, 0.527);
     backdrop-filter: blur(5px);
     border: solid 1px rgba(255, 255, 255, 0.685);
     border-radius: 0.5rem;
-    z-index: 1;
 }
 
 fieldset, form{
@@ -105,6 +116,7 @@ fieldset, form{
 
 form{
     position: relative;
+    
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -113,6 +125,7 @@ form{
 }
 form legend{
     position: absolute;
+    
     top: -1rem;
     left: 50%;
     transform: translate(-50%, 0);
@@ -125,6 +138,7 @@ form legend{
 }
 .buttons{
     position: absolute;
+    
     width: max-content;
     bottom: -1.5rem;
     left: 50%;
@@ -193,8 +207,6 @@ ul li {
 }
 .CadClientePF, .CadClientePJ, .Estoque, .dropdown_menu, .dropdown_menu-1{
     display: none;
-
-    z-index: -1;
 }
 /* LOGIN DESIGN */
 .login{
