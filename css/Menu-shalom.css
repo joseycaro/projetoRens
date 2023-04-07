@@ -24,9 +24,9 @@ body{
 .menu_bar ul{
     list-style: none;
     display: flex;
-    
 }
-.menu_bar ul li{
+.menu_bar ul li,
+ul li{
     padding: 10px 30px;
     position: relative;
 }
@@ -35,6 +35,11 @@ ul li a{
     text-decoration: none;
     font-size: 1rem;
     transition: 200ms;
+    cursor: pointer;
+}
+.menu_bar .dropdown_menu, 
+.menu_bar .dropdown_menu-1{
+    z-index: 10;
 }
 .menu_bar ul li a:hover{
     color: white;
@@ -46,11 +51,11 @@ ul li a{
     left: 0;
     background: white;
     border-radius: 0.5rem;
-    
 }
 .menu_bar ul li:hover .dropdown_menu ul{
     display: block;
     margin: 0.5rem 0;
+    
 }
 .menu_bar ul li:hover .dropdown_menu ul li{
     width: 150px;
@@ -90,6 +95,7 @@ fieldset{
     backdrop-filter: blur(5px);
     border: solid 1px rgba(255, 255, 255, 0.685);
     border-radius: 0.5rem;
+    z-index: 1;
 }
 
 fieldset, form{
@@ -103,7 +109,7 @@ form{
     flex-direction: row;
     gap: 2rem;
     width: 100%;
-    padding: 3rem ;
+    padding: 3rem;
 }
 form legend{
     position: absolute;
@@ -187,6 +193,8 @@ ul li {
 }
 .CadClientePF, .CadClientePJ, .Estoque, .dropdown_menu, .dropdown_menu-1{
     display: none;
+
+    z-index: -1;
 }
 /* LOGIN DESIGN */
 .login{
