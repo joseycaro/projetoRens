@@ -1,8 +1,8 @@
 var CadClientePF = document.querySelector('.CadClientePF');
 var CadClientePJ = document.querySelector('.CadClientePJ');
-var Estoque = document.querySelector('.Box');
+var Estoque = document.querySelector('.Estoque');
 
-function abriPF() {
+function getCadClientePF() {
     if(CadClientePF.style.display == "none"){
         Estoque.style.display = 'none';
         CadClientePJ.style.display = 'none';
@@ -14,8 +14,11 @@ function abriPF() {
         CadClientePF.style.display = 'block';
     }
 }
+function closePF() {
+    CadClientePF.style.display = 'none';
+}
 
-function abriPJ() {
+function getCadClientePJ() {
     if(CadClientePJ.style.display == "none"){
         CadClientePF.style.display = 'none';
         Estoque.style.display = 'none';        
@@ -26,6 +29,9 @@ function abriPJ() {
         Estoque.style.display = 'none';    
         CadClientePJ.style.display = 'block';
     }
+}
+function closePJ() {
+    CadClientePJ.style.display = 'none';
 }
 
 function getEstoque() {
@@ -39,4 +45,11 @@ function getEstoque() {
         CadClientePJ.style.display = 'none';    
         Estoque.style.display = 'block';
     }
+}
+function closeEstoque() {
+    Estoque.style.display = 'none';
+}
+
+function getMenu() {
+    window.location = '/views/Menu-shalom.html';
 }
