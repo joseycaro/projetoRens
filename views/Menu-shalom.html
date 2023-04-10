@@ -39,10 +39,10 @@
                             <a onclick="getEstoque()">Estoque</a>
                         </li>
                         <li>
-                            <a>Cliente</a>
+                            <a onclick="getSearchClient()">Cliente</a>
                         </li>
                         <li>
-                            <a>Pedidos</a>
+                            <a onclick="getConsultaPedidos()" >Pedidos</a>
                         </li>
                     </ul>
                 </div>
@@ -63,19 +63,19 @@
                         
                         <div>
                             <div class="inputBox">
-                                <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nome Completo" required>
+                                <input type="text" name="nome" id="nome" class="in" placeholder="Nome Completo" required>
                             </div>
                             <div class="inputBox">
-                                <input type="email" name="email" id="email" class="inputUser" placeholder="Email" required>
+                                <input type="email" name="email" id="email" class="in" placeholder="Email" required>
                             </div>
                             <div class="inputBox">
-                                <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Telefone" required>
+                                <input type="tel" name="telefone" id="telefone" class="in" placeholder="Telefone" required>
                             </div>
                             <div class="inputBox">
-                                <input type="cpf" name="cpf" id="cpf" class="inputUser" placeholder="CPF" required>
+                                <input type="cpf" name="cpf" id="cpf" class="in" placeholder="CPF" required>
                             </div>
                             <div class="inputBox">
-                                <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Tel Fixo" required>
+                                <input type="tel" name="telefone" id="telefone" class="in" placeholder="Tel Fixo" required>
                             </div>
                         </div>
                         <div>
@@ -99,24 +99,24 @@
                             </div>
                             <div class="data">
                                 <label type="data_nascimento">Nascimento:</label>
-                                <input type="date" name="data de nascimento" id="data_nascimento" class="InputUser" placeholder="" required>
+                                <input type="date" name="data de nascimento" id="data_nascimento" class="in" placeholder="" required>
                             </div>
                         </div>
                         <div>
                             <div class="inputBox">
-                                <input type="text" name="cidade" id="cidade" class="inputUser" placeholder="Cidade" required>
+                                <input type="text" name="cidade" id="cidade" class="in" placeholder="Cidade" required>
                             </div>
                             <div class="inputBox">
-                                <input type="text" name="estado" id="estado" class="inputUser" placeholder="Estado" required>
+                                <input type="text" name="estado" id="estado" class="in" placeholder="Estado" required>
                             </div>
                             <div class="inputBox">
-                                <input type="text" name="endereço" id="endereço" class="inputUser" placeholder="Endereço" required>
+                                <input type="text" name="endereço" id="endereço" class="in" placeholder="Endereço" required>
                             </div>
                             <div class="inputBox">
-                                <input type="text" name="numero" id="numero" class="inputUser" placeholder="Número" required>
+                                <input type="text" name="numero" id="numero" class="in" placeholder="Número" required>
                             </div>
                             <div class="inputBox">
-                                <input type="cep" name="cep" id="cep" class="inputUser" placeholder="CEP" required>
+                                <input type="cep" name="cep" id="cep" class="in" placeholder="CEP" required>
                             </div>
                         </div>
 
@@ -148,39 +148,39 @@
                         <button class="btn voltar" onclick="closePJ()"><i class="fa-solid fa-xmark"></i></button>
                         <div >
                             <div class="inputBox">
-                                <input type="text" name="nomefantasia" id="nome" class="inputUser" placeholder="Nome Fanatasia" required>
+                                <input type="text" name="nomefantasia" id="nome" class="in" placeholder="Nome Fanatasia" required>
                             </div>
                             <div class="inputBox">
-                                <input type="email" name="email" id="email" class="inputUser" placeholder="Email" required>
+                                <input type="email" name="email" id="email" class="in" placeholder="Email" required>
                             </div>
                             <div class="inputBox">
-                                <input type="tel" name="telefone" id="telefone" class="inputUser" placeholder="Telefone:" required>
+                                <input type="tel" name="telefone" id="telefone" class="in" placeholder="Telefone:" required>
                             </div>
                             <div class="inputBox">
-                                <input type="cpf" name="cnpj" id="cnpj" class="inputUser" placeholder="CNPJ:" required>
+                                <input type="cpf" name="cnpj" id="cnpj" class="in" placeholder="CNPJ:" required>
                             </div>
                             <div class="inputBox">
-                                <input type="tel" name="celular" id="celular" class="inputUser" placeholder="Celular:" required>
+                                <input type="tel" name="celular" id="celular" class="in" placeholder="Celular:" required>
                             </div>
                             <div class="inputBox">
-                                <input type="tel" name="cad.estadual" id="cad.estadual" class="inputUser" placeholder="Cad Estadual:" required>
+                                <input type="tel" name="cad.estadual" id="cad.estadual" class="in" placeholder="Cad Estadual:" required>
                             </div>
                         </div>                        
                         <div >
                             <div class="inputBox">
-                                <input type="text" name="cidade" id="cidade" class="inputUser" placeholder="Cidade" required>
+                                <input type="text" name="cidade" id="cidade" class="in" placeholder="Cidade" required>
                             </div>
                             <div class="inputBox">
-                                <input type="text" name="estado" id="estado" class="inputUser" placeholder="Estado" required>
+                                <input type="text" name="estado" id="estado" class="in" placeholder="Estado" required>
                             </div>
                             <div class="inputBox">
-                                <input type="text" name="endereço" id="endereço" class="inputUser" placeholder="Endereço" required>
+                                <input type="text" name="endereço" id="endereço" class="in" placeholder="Endereço" required>
                             </div>
                             <div class="inputBox">
-                                <input type="text" name="numero" id="numero" class="inputUser" placeholder="Número" required>
+                                <input type="text" name="numero" id="numero" class="in" placeholder="Número" required>
                             </div>
                             <div class="inputBox">
-                                <input type="cep" name="cep" id="cep" class="inputUser" placeholder="CEP" required>
+                                <input type="cep" name="cep" id="cep" class="in" placeholder="CEP" required>
                             </div>
                         </div>
                         <div class="buttons">
@@ -211,24 +211,24 @@
                     <button class="btn voltar" onclick="closeEstoque()"><i class="fa-solid fa-xmark"></i></button>
                     <div >
                         <div class="inputBox">
-                            <input type="text" name="produto" id="produto" class="inputUser" placeholder="Produto" required>
+                            <input type="text" name="produto" id="produto" class="in" placeholder="Produto" required>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="grupo" id="grupo" class="inputUser" placeholder="grupo" required>
+                            <input type="text" name="grupo" id="grupo" class="in" placeholder="grupo" required>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="vlcusto" id="vlcusto" class="inputUser" placeholder="VlCusto" required>
+                            <input type="text" name="vlcusto" id="vlcusto" class="in" placeholder="VlCusto" required>
                         </div>
                     </div> 
                     <div >
                         <div class="inputBox">
-                            <input type="Vlvenda" name="Vlvenda" id="Vlvenda" class="inputUser" placeholder="VlVenda" required>
+                            <input type="Vlvenda" name="Vlvenda" id="Vlvenda" class="in" placeholder="VlVenda" required>
                         </div>
                         <div class="inputBox">
-                            <input type="estoquem" name="estoquem" id="estoquem" class="inputUser" placeholder="Estoque Mínimo" required>
+                            <input type="estoquem" name="estoquem" id="estoquem" class="in" placeholder="Estoque Mínimo" required>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="estoqueatu" id="estoqueatu" class="inputUser" placeholder="Estoque Atual" required>
+                            <input type="text" name="estoqueatu" id="estoqueatu" class="in" placeholder="Estoque Atual" required>
                         </div>
                     </div>
                     <div class="buttons">
@@ -240,6 +240,72 @@
                         </button>
                         <button type="button" class="btnPanel" id="excluir" form="action">
                             Excluir
+                        </button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+
+        <div class="search-client">
+            <fieldset>
+                <form>
+                    <legend>Consulta Clientes</legend>
+                    <button class="btn voltar" onclick="closeSearchClient()"><i class="fa-solid fa-xmark"></i></button>
+
+                    <!-- // ==== content ==== -->
+                    <div>
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                    </div>
+                    
+                    <div>
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                    </div>
+
+                    <div class="buttons">
+                        <button type="button" class="btnPanel" id="consultar" form="action">
+                            Consultar
+                        </button>
+                        <button type="button" class="btnPanel" id="limpar" form="action">
+                            Limpar
+                        </button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+
+        <div class="consulta-pedidos">
+            <fieldset>
+                <form>
+                    <legend>Consulta Pedidos</legend>
+                    <button class="btn voltar" onclick="closeConsultaPedidos()"><i class="fa-solid fa-xmark"></i></button>
+
+                    <!-- // ==== content ==== -->
+                    <div>
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                    </div>
+                    
+                    <div>
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                        <input type="text" placeholder="Content:...">
+                    </div>
+
+                    <div class="buttons">
+                        <button type="button" class="btnPanel" id="consultar" form="action">
+                            Consultar
+                        </button>
+                        <button type="button" class="btnPanel" id="limpar" form="action">
+                            Limpar
                         </button>
                     </div>
                 </form>

@@ -11,7 +11,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(195, 201, 201);
+
+    height: 100vh;
+    background-image: url(../img/back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
    
 }
 .container{
@@ -20,7 +25,8 @@ body {
     gap: 1rem;
     padding: 4rem;
     border-radius: 0.5rem;
-    background: rgba(119, 118, 118, 0);
+    background: rgba(223, 223, 223, 0.662);
+    backdrop-filter: blur(10px);
     box-shadow: 0 0 1rem 0 #000000;
 }
 input {
@@ -29,21 +35,21 @@ input {
     outline: none;
 }
 .input{
-    color: white;
     background: transparent;
-    box-shadow: 0 2px 0 0 #0079FC;
+    box-shadow: 0 2px 0 0 #000000;
 }
 input::placeholder{
-    color: #0079FC;
+    color: #000000;
     transition: 200ms;
 }
 input:hover::placeholder{
-    padding-left: 0.3rem;
+    padding-left: 3px;
 }
 a{
     text-align: center;
     color: white;
     background: #0079FC;
+    font-size: 1.3rem;
     padding: 0.7rem 2rem;
     border: solid 1px #0079FC;
     border-radius: 0.5rem;
@@ -53,6 +59,10 @@ a{
 a:hover{
     background: transparent;
     color: #0079FC;
+}
+.logoRens{
+    text-align: center;
+    font-size: 5rem;
 }
 
 @media screen and (max-width: 768px) {
