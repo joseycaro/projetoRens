@@ -121,7 +121,7 @@ form{
     flex-direction: row;
     gap: 2rem;
     width: 100%;
-    padding: 3rem;
+    padding: 3rem 2rem;
 }
 form legend{
     position: absolute;
@@ -211,4 +211,24 @@ button{
 }
 .CadClientePF, .CadClientePJ, .Estoque, .dropdown_menu, .dropdown_menu-1, .search-client, .consulta-pedidos{
     display: none;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+}
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+.tableContent{
+    overflow-y: scroll;
+    min-width: max-content;
+    height: 15rem;
+}
+.top{
+    background: black;
+    color: white;
 }

@@ -99,22 +99,22 @@ function closeSearchClient() {
 }
 //OPEN - CLOSE
 function getConsultaPedidos() {
-    if(searchClient.style.display == "none"){
+    if(consultaPedidos.style.display == "none"){
 
         CadClientePJ.style.display = 'none'; 
         Estoque.style.display = 'none';
-        consultaPedidos.style.display = 'none';
         CadClientePF.style.display = 'none';
+        searchClient.style.display = 'none';
         
-        searchClient.style.display = 'block';
+        consultaPedidos.style.display = 'block';
     }
     else{
         CadClientePJ.style.display = 'none'; 
         Estoque.style.display = 'none';
-        consultaPedidos.style.display = 'none';
         CadClientePF.style.display = 'none';
+        searchClient.style.display = 'none';
         
-        searchClient.style.display = 'block';
+        consultaPedidos.style.display = 'block';
     }
 }
 function closeConsultaPedidos() {
