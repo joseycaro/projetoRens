@@ -48,7 +48,7 @@
                     </ul>
                 </div>
             </li>
-            <li><a>Primissórias</a></li>
+            <li><a onclick="getPromissoria()">Primissórias</a></li>
             <li><a>Pedidos</a></li>
             <li><a>Rotinas</a></li>
             <li><a>Alterar Senha</a></li>
@@ -351,7 +351,7 @@
                 </form>
             </fieldset>
         </div>
-        
+
         <div class="consulta-pedidos">
             <fieldset>
                 <form>
@@ -383,6 +383,121 @@
                     </div>
                 </form>
             </fieldset>
+        </div>
+
+        <div class="promissoria">
+            <div class="promissoriaContent">
+                <button class="btn voltar" onclick="closePromissoria()"><i class="fa-solid fa-xmark"></i></button>
+                <h4>Promissória</h4>
+                <div style="display: flex; flex-direction: row; gap: 1rem; width: min-content; margin: 0 auto; padding-bottom: 1rem;">
+                    <div>
+                        <input type="text" placeholder="Val Total:.">
+                        <input type="text" placeholder="Qntd. Promissórias:.">
+                        
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Val Entrada:.">
+                        <input type="text" placeholder="Intervado (Dias):.">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Total a Parcelar:.">
+                        <input type="select" placeholder="Tipo Entrada:.">
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="tableContent">
+                        <table>
+                            <tr class="top">
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Savings</th>
+                                <th>Savings</th>
+                                <th>Savings</th>
+                            </tr>
+                            <tr>
+                                <td>Peter</td>
+                                <td>Griffin</td>
+                                <td>$100</td>
+                                <td>$100</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>Lois</td>
+                                <td>Griffin</td>
+                                <td>$150</td>
+                                <td>$150</td>
+                                <td>$150</td>
+                            </tr>
+                            <tr>
+                                <td>Joe</td>
+                                <td>Swanson</td>
+                                <td>$300</td>
+                                <td>$300</td>
+                                <td>$300</td>
+                            </tr>
+                            <tr>
+                                <td>Peter</td>
+                                <td>Griffin</td>
+                                <td>$100</td>
+                                <td>$100</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>Lois</td>
+                                <td>Griffin</td>
+                                <td>$150</td>
+                                <td>$150</td>
+                                <td>$150</td>
+                            </tr>
+                            <tr>
+                                <td>Joe</td>
+                                <td>Swanson</td>
+                                <td>$300</td>
+                                <td>$300</td>
+                                <td>$300</td>
+                            </tr>
+                            <tr>
+                                <td>Peter</td>
+                                <td>Griffin</td>
+                                <td>$100</td>
+                                <td>$100</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>Lois</td>
+                                <td>Griffin</td>
+                                <td>$150</td>
+                                <td>$150</td>
+                                <td>$150</td>
+                            </tr>
+                            <tr>
+                                <td>Joe</td>
+                                <td>Swanson</td>
+                                <td>$300</td>
+                                <td>$300</td>
+                                <td>$300</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            
+                <div class="buttons">
+                    <button type="button" class="btnPanel" id="Gerar" form="action">
+                        <i class="fa-solid fa-plus"></i>
+                        Gerar
+                    </button>
+                    <button type="button" class="btnPanel" id="consultar" form="action">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Consultar
+                    </button>
+                    <button type="button" class="btnPanel" id="limpar" form="action">
+                        <i class="fa-solid fa-broom"></i>
+                        Limpar
+                    </button>
+                </div>
+            </div>
+            
         </div>
     </main>
 </body>

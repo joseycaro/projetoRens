@@ -4,6 +4,7 @@ var CadClientePJ = document.querySelector('.CadClientePJ');
 var Estoque = document.querySelector('.Estoque');
 var searchClient = document.querySelector('.search-client');
 var consultaPedidos = document.querySelector('.consulta-pedidos');
+var promissoria = document.querySelector('.promissoria');
 
 //OPEN - CLOSE
 function getCadClientePF() {
@@ -120,6 +121,30 @@ function getConsultaPedidos() {
 function closeConsultaPedidos() {
     consultaPedidos.style.display = 'none';
 }
+//OPEN - CLOSE
+function getPromissoria() {
+    if(promissoria.style.display == "none"){
+
+        CadClientePJ.style.display = 'none'; 
+        Estoque.style.display = 'none';
+        CadClientePF.style.display = 'none';
+        searchClient.style.display = 'none';
+        
+        promissoria.style.display = 'block';
+    }
+    else{
+        CadClientePJ.style.display = 'none'; 
+        Estoque.style.display = 'none';
+        CadClientePF.style.display = 'none';
+        searchClient.style.display = 'none';
+        
+        promissoria.style.display = 'block';
+    }
+}
+function closePromissoria() {
+    promissoria.style.display = 'none';
+}
+
 //OPEN - CLOSE
 function getMenu() {
     window.location = '/views/Menu-shalom.html';
